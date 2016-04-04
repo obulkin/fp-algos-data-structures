@@ -25,7 +25,7 @@ class Image
 
   def blur!
     # Makes a deeper copy for building the new image
-    if @image_matrix[0] == Array do
+    if @image_matrix[0] == Array
       blurred_matrix = @image_matrix.map(&:clone)
     else
       blurred_matrix = @image_matrix.map {|cell| cell}
