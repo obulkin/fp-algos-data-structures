@@ -9,7 +9,7 @@ RSpec.describe "#collatz" do
 end
 
 RSpec.describe "#longest_collatz" do
-  it "should return the starting point that produces the longest collatz sequence while falling into a given range" do
+  it "should return the starting point that produces the longest Collatz sequence while falling into a given range" do
     expect(longest_collatz 1..7).to eq(7)
     expect(longest_collatz 1..1000000).to eq(837799)
   end
